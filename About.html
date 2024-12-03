@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>About the game</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+      #bt {
+        margin-left: 1400px;
+        margin-top: 150px;
+      }
+
+      #main {
+        display: grid;
+        justify-items: center;
+      }
+
+      #ale {
+        text-align: center;
+        margin-top: 30px;
+        width: 400px;
+        background-color: crimson;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="jumbotron text-center">
+      <h1>TIC TAC TOE</h1>
+      <p>It's You Make An Intelligent!</p>
+    </div>
+
+    <!-- Bootstrap Alert -->
+    <div class="container">
+      <div
+        class="alert alert-danger alert-dismissible fade in"
+        id="bootstrap-alert"
+      >
+        <a href="#" class="close" data-dismiss="alert" aria-label="close"
+          >&times;</a
+        >
+        <strong>Attention!</strong> Get ready to test your intelligence with
+        this exciting Tic Tac Toe game!
+      </div>
+    </div>
+
+    <h4 id="demo"></h4>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h3>Basic rules of the game</h3>
+          <p>
+            Playing field The game is played on a square field, usually 3×3
+            cells in size. The field is empty before the game begins.
+          </p>
+          <p>
+            Aim of the game The aim of the tic-tac-toe game is to place three
+            symbols in a row: either vertically or horizontally or diagonally.
+            One player uses a tic-tac-toe (X) and the other a tic-toe (O).
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <h3>How to place tic-and-tac-toe</h3>
+          <p>
+            Step by step instructions: The players take it in turns to place
+            their symbols on the empty spaces of the field.
+          </p>
+          <p>
+            The first crosses (X) go. Players try to place three of their
+            symbols in a row to win.
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <h3>Winning combinations</h3>
+          <p>
+            How to win Tic-Tac-Toe To win, you need to line up three of your
+            symbols in a row.
+          </p>
+          <p>
+            Here are examples of winning combinations:
+            <br />
+            XXX
+            <br />
+            OOO
+            <br />
+            Popular game variations
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-primary" id="bt">Ready to Play</button>
+
+    <script>
+      const btn = document.getElementById("bt");
+      btn.addEventListener("click", () => {
+        window.location.assign("./Animation.html");
+      });
+    </script>
+  </body>
+</html>
