@@ -12,10 +12,28 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <style>
-      #bt {
-        margin-left: 1200px;
-        margin-top: 80px;
-      }
+       #bt {
+    margin-left: 1400px;
+     margin-top: 80px;
+    display: block;
+    width: fit-content; 
+  }
+
+  @media (max-width: 768px) {
+    #bt {
+      margin-top: 40px; 
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    #bt {
+      margin-left: 240px;
+      margin-top: 20px; 
+      font-size: 14px; 
+      padding: 10px 20px; 
+    }
+  }
 
       #main {
         display: grid;
